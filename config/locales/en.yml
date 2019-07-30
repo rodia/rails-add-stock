@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  login:
+    index:
+      btn:
+        login: 'Login'
+        lost_passord: 'Lost password?'
