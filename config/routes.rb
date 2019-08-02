@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   namespace :admin do
-    get 'users/new'
+    # get 'users/new'
+    resources :users
   end
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
-  get 'login', to: 'login#index'
+  get    :login,   to: 'sessions#new'
+  post   :login,   to: 'sessions#create'
+  delete :logout,  to: 'sessions#destroy'
+  get :signup,  to: 'admin/users#new'
 end

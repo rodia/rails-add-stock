@@ -30,11 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  login:
-    index:
+  sessions:
+    new:
       btn:
         login: 'Login'
         lost_passord: 'Lost password?'
       msg:
         recover_description: 'Enter your e-mail address below and we will send you instructions how to recover a password.'
+    create:
+      msg:
+        password_email_issue: 'Invalid email/password combination'
+  users:
+    create:
+      msg:
+        welcome: 'Welcome to the Sample App!'

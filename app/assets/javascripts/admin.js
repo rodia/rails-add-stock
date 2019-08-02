@@ -12,8 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery.min
-//= require ./js/bootstrap.min
-//= require ./js/bootstrap-colorpicker
-//= require ./js/maruti
-//= require ./js/maruti.login
+//= require_tree ./admin
+//= require_tree ./js
