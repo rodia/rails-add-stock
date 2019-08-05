@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :admin do
-    # get 'users/new'
     resources :users
+    get :dashboard, to: 'dashboard#index'
   end
 
   get    :login,   to: 'sessions#new'

@@ -1,4 +1,4 @@
-<% provide(:title, @user.email) %>
+<% provide(:title, :dashboard) %>
 <%= render 'layouts/admin/content_header' %>
 <div class="container-fluid">
   
@@ -7,18 +7,11 @@
    <div class="row-fluid">
     <div class="widget-box">
       <div class="widget-title"><span class="icon"><i class="icon-tasks"></i></span>
-        <h5>User </h5>
+        <h5>Dashboard </h5>
         <div class="buttons"><a href="#" class="btn btn-mini btn-success"><i class="icon-refresh"></i> Update stats</a></div>
       </div>
       <div class="widget-content">
-        <aside class="col-md-4">
-          <section class="user_info">
-            <h1>
-              <%= gravatar_for @user %>
-              <%= @user.email %>
-            </h1>
-          </section>
-        </aside>
+        
       </div>
     </div>
   </div>
