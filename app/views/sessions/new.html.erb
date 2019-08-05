@@ -17,6 +17,14 @@
             </div>
         </div>
     </div>
+    <div class="control-group">
+        <div class="controls">
+            <%= f.label :remember_me, class: "checkbox inline" do %>
+                <%= f.check_box :remember_me %>
+                <span>Remember me on this computer</span>
+            <% end %>
+        </div>
+    </div>
     <div class="form-actions">
         <span class="pull-left">
             <a href="#" class="flip-link btn btn-inverse" id="to-recover"><%= t 'sessions.new.btn.lost_passord' %></a></span>

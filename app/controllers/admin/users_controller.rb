@@ -7,7 +7,7 @@ class Admin::UsersController < ApplicationController
 
   def new
     @user = User.new
-    render layout: 'application'
+    render layout: 'application' unless logged_in?
   end
 
   def create

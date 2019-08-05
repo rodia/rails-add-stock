@@ -8,7 +8,13 @@
     <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body> admin layout
-    <%= yield %>
+  <body>
+    <%= render 'layouts/admin/header' %>
+    <%= render 'layouts/admin/messages' %>
+    <%= render 'layouts/admin/top_menu' %>
+    <%= render 'layouts/admin/sidebar' %>
+    <div id="content">
+      <%= yield %>
+    </div>
   </body>
 </html>

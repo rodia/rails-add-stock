@@ -13,6 +13,5 @@
  *= require bootstrap-responsive.min
  *= require bootstrap.min
  *= require sessions
- *= require_tree ./admin
  *= require_self
  */
