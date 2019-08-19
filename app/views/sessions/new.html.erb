@@ -5,7 +5,7 @@
         <div class="controls">
             <div class="main_input_box">
                 <span class="add-on"><i class="icon-user"></i></span><%= f.email_field :email,
-                    placeholder: 'Username' %>
+                    placeholder: t('sessions.new.text.username') %>
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <div class="controls">
             <div class="main_input_box">
                 <span class="add-on"><i class="icon-lock"></i></span><%= f.password_field :password,
-                    placeholder: 'Password' %>
+                    placeholder: t('sessions.new.text.password') %>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
         <div class="controls">
             <%= f.label :remember_me, class: "checkbox inline" do %>
                 <%= f.check_box :remember_me %>
-                <span>Remember me on this computer</span>
+                <span><%= t 'sessions.new.msg.remember_label' %></span>
             <% end %>
         </div>
     </div>
@@ -33,19 +33,8 @@
         </span>
     </div>
   <% end %>
-  <form id="recoverform" action="#" class="form-vertical">
-    <p class="normal_text"><%= t 'sessions.new.msg.recover_description' %></p>
+  
+  <%= render 'recover_form' %>
 
-    <div class="controls">
-        <div class="main_input_box">
-            <span class="add-on"><i class="icon-envelope"></i></span><input type="text" placeholder="E-mail address" />
-        </div>
-    </div>
-
-    <div class="form-actions">
-        <span class="pull-left"><a href="#" class="flip-link btn btn-inverse" id="to-login">&laquo; Back to login</a></span>
-        <span class="pull-right"><input type="submit" class="btn btn-info" value="Recover" /></span>
-    </div>
-  </form>
-  <p><span class="pull-right">New user? <%= link_to "Sign up now!", signup_path %></span></p>
+  <p><span class="pull-right"><%= link_to "Sign up now!", signup_path %></span></p>
 </div>

@@ -35,8 +35,15 @@ en:
       btn:
         login: 'Login'
         lost_passord: 'Lost password?'
+        back_to_login: 'Back to login'
+        recover: 'Recover'
       msg:
         recover_description: 'Enter your e-mail address below and we will send you instructions how to recover a password.'
+        remember_label: 'Remember me on this computer'
+      text:
+        username: 'Username'
+        password: 'Password'
+        recover_email: 'E-mail address'
     create:
       msg:
         password_email_issue: 'Invalid email/password combination'
