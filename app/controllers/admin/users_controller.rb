@@ -11,8 +11,8 @@ class Admin::UsersController < AdminController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = I18n.t 'users.create.msg.welcome'
+      @user.send_activation_email
+      flash[:success] = I18n.t 'users.create.msg.send_email_verification'
       redirect_to [:admin, @user]
     else
       render :new

@@ -47,7 +47,13 @@ en:
     create:
       msg:
         password_email_issue: 'Invalid email/password combination'
+        account_activate: 'Account not activated. message Check your email for the activation link.'
   users:
     create:
       msg:
-        welcome: 'Welcome to the Sample App!'
+        welcome: 'Welcome to the ADDStock App!'
+        send_email_verification: 'Please check your email to activate your account.'
+  account_activations:
+    edit:
+      activation: 'Account activated!'
+      invalid_activation: 'Invalid activation link'
