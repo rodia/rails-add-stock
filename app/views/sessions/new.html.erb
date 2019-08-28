@@ -36,5 +36,9 @@
   
   <%= render 'recover_form' %>
 
-  <p><span class="pull-right"><%= link_to "Sign up now!", signup_path %></span></p>
+  <p><span class="pull-right">
+    <%= link_to t('static_pages.home'), root_path %> |
+    <%= link_to t('sessions.new.msg.signup'), signup_path %>
+    </span>
+  </p>
 </div>

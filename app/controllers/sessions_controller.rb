@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       if user.activated?
         log_in user
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-        redirect_back_or [:admin, user]
+        redirect_to admin_dashboard_path
       else
         message = I18n.t 'session.create.msg.account_activate'
         flash[:warning] = message

@@ -12,4 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery.min
+//= require ./application/jquery.fancybox.pack
+//= require ./application/jquery.flexslider-min
+//= require ./application/scripts
+//= require ./application/vendor/modernizr-2.8.3-respond-1.4.2.min

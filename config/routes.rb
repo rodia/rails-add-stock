@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+  get 'static_pages/help'
   get 'password_resets/new'
-
   get 'password_resets/edit'
 
-  root 'application#index'
+  root 'static_pages#home'
 
   namespace :admin do
     resources :products
